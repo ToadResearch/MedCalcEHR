@@ -22,7 +22,7 @@ chmod +x setup.sh
 ./setup.sh --per-question 1
 ```
 
-Now we setup the LLM server
+Now we setup the LLM server (these are the default args, and are not necessary to include in the command)
 
 ```sh
 chmod +x start_server.sh
@@ -30,7 +30,7 @@ chmod +x start_server.sh
   --model-path baichuan-inc/Baichuan-M2-32B-GPTQ-Int4 \
   --port 30000 \
   --tp 4 \
-  -- dp 2 \
+  --dp 2 \
   --dtype bfloat16 \
   --reasoning-parser qwen3 \
   --mem-fraction 0.9 \

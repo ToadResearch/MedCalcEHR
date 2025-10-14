@@ -7,13 +7,13 @@ model="baichuan-m2-32b-gptq-int4"
 cd kiln-headless
 
 bun run headless --single \
-  --text "Mr. Grok Four is 42 years old and has the flu" \
+  --text "Mr. Grok Four is 42 years old and has a stomach bug" \
   --type note_and_fhir \
   --llm-url $base_url \
   --model $model \
   --llm-max-concurrency 3 \
-  -- val-max-iters 30 \
-  -- fhir-concurrency 3 \
+  --val-max-iters 30 \
+  --fhir-concurrency 3 \
 
 bun run headless --batch \
   --file example-batch/sample.jsonl \
