@@ -1,20 +1,9 @@
-it should append both the clinical note and fhir bundle to the rows
 
-have it print these two file paths at the end 
+[dataset](https://huggingface.co/datasets/ncbi/MedCalc-Bench-v1.0)
 
-have the run.sh file accept args about the number of examples per question type...
-then have this pass into the download_data.py file 
+[fhir converter](https://github.com/ToadResearch/kiln-headless)
 
-flow:
-
-5) create task files from them and automatically push, or have them download from HF and create tasks...
-6) upload this dataset
-
-https://huggingface.co/datasets/ncbi/MedCalc-Bench-v1.0
-
-https://github.com/jmandel/kiln
-
-https://huggingface.co/baichuan-inc/Baichuan-M2-32B
+[model](https://huggingface.co/baichuan-inc/Baichuan-M2-32B)
 
 
 
@@ -66,11 +55,4 @@ And finally upload the data to HuggingFace
 
 ```sh
 huggingface-cli login 
-```
-
-```sh
-python upload_to_hf.py \
-    --hf_username mkieffer \
-    --hf_repo_name MedCalcEHR \
-    --private false
 ```
