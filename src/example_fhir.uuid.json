@@ -1,0 +1,4091 @@
+{
+    "resourceType": "Bundle",
+    "type": "document",
+    "id": "760ad1bf-d791-4efd-bf6c-2f868cf31e87",
+    "timestamp": "2025-09-22T21:27:35.083Z",
+    "identifier": [
+        {
+            "value": "composition-473f98be",
+            "system": "https://example.org/fhir/Bundle"
+        },
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:760ad1bf-d791-4efd-bf6c-2f868cf31e87"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:617106dd-6421-4758-8010-5f7c03d18bd2",
+            "resource": {
+                "resourceType": "Composition",
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "60591-5",
+                            "display": "Patient summary Document"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053",
+                    "display": "56-year-old male gardener with type 2 diabetes mellitus and central diabetes insipidus"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a",
+                    "display": "Inpatient admission for evaluation of persistent polyuria and polydipsia"
+                },
+                "date": "2023-09-15T10:30:00Z",
+                "author": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9",
+                        "display": "Endocrinologist, MD"
+                    }
+                ],
+                "title": "Admission Note for Polyuria Evaluation",
+                "section": [
+                    {
+                        "title": "Chief Complaint",
+                        "text": {
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The patient is a 56-year-old male gardener who presents with a two-month history of profound thirst and excessive urination, describing it as &quot;an unstoppable need to drink cold water all day and night, like my body is on fire from the inside.&quot; This relentless polydipsia has driven him to consume over 8 liters of refrigerated water daily—equivalent to about 10 bottles of 750 ml capacity—while experiencing frequent polyuria that disrupts his sleep and daily work routine, leading to nocturia that wakes him multiple times nightly.</p></div>",
+                            "status": "additional"
+                        }
+                    },
+                    {
+                        "title": "History of Present Illness",
+                        "text": {
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Building on his chief complaint, the patient, a 56-year-old male gardener, first noticed the insidious onset of excessive thirst and urination approximately two months prior to admission. Initially, he visited a local clinic where he was diagnosed with type 2 diabetes mellitus (DM) based on a fasting blood sugar of 150 mg/dL. He was started on an oral hypoglycemic agent, which improved his hyperglycemia, yet his symptoms persisted unabated. Despite glycemic control, he continued to drink more than 8 liters of cold water daily and pass large volumes of urine frequently, often exceeding 10 liters per day as later quantified. This polyuria and polydipsia significantly impacted his quality of life, causing sleep fragmentation from nocturia—waking him 4-5 times per night—and fatigue during his physically demanding outdoor work as a gardener, where access to water and restrooms became constant challenges, increasing risks of mild dehydration in hot conditions. He denied any precipitating events such as head trauma, and reported no associated symptoms like fever, arthralgia, or neurologic deficits. His weight had decreased from 71 kg to 68 kg over this period, reflecting mild chronic volume depletion from unchecked fluid losses, though he remained resilient in maintaining his livelihood without seeking earlier specialist care. Prior to this, his health was unremarkable, with no family history of similar endocrine disorders.</p></div>",
+                            "status": "additional"
+                        },
+                        "entry": [
+                            {
+                                "reference": "urn:uuid:dbdf4374-f23c-4c36-84ed-2f0bfa8e4c09"
+                            },
+                            {
+                                "reference": "urn:uuid:d34449d4-18af-46da-9850-92d07fff9b2a"
+                            },
+                            {
+                                "reference": "urn:uuid:ae8e91cf-1051-488f-b6c9-79bce4a7bd48"
+                            },
+                            {
+                                "reference": "urn:uuid:c3b3d064-a821-47c1-9901-1f3082b2515b"
+                            },
+                            {
+                                "reference": "urn:uuid:7ca3584b-f50d-4204-9b0e-960c12162928"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Past Medical History",
+                        "text": {
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Transitioning to his background, the patient is a 56-year-old male with no significant past medical history prior to the onset of his current symptoms. He reports a lifetime of robust health, with no chronic medical conditions, prior hospitalizations, or surgical interventions. He has never been diagnosed with hypertension, cardiovascular disease, or other endocrine issues, and denies any history of mental health disorders, substance use, or allergies. As a lifelong gardener working outdoors, he maintains an active lifestyle, which likely contributed to his resilience despite the emerging symptoms, though he notes that the recent polyuria has heightened his risk of dehydration during hot weather exposure. His immunizations are up to date, and he takes no regular medications other than the recently initiated oral hypoglycemic for DM.</p></div>",
+                            "status": "additional"
+                        }
+                    },
+                    {
+                        "title": "Physical Examination",
+                        "text": {
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Upon admission, the patient is a 56-year-old male who appears well-nourished and in no acute distress, though subtle signs of chronic volume depletion are evident, consistent with his reported history of massive fluid turnover. He measures 176 cm in height and weighs 68 kg, with a body mass index of approximately 22 kg/m². Vital signs include blood pressure of 132/70 mmHg, pulse rate of 80 beats per minute, respiratory rate of 16 breaths per minute, and temperature of 36.8°C. His skin shows mild dryness and tenting, suggestive of ongoing insensible losses, but no edema, jaundice, or pallor. Head, eyes, ears, nose, and throat examination is unremarkable, with moist oral mucosa despite his thirst complaints. The neck is supple without thyromegaly or lymphadenopathy. Cardiopulmonary exam reveals regular heart sounds and clear lung fields, with no murmurs or wheezes. Abdominal exam is soft and nontender, without organomegaly. Neurologic evaluation is intact, with no focal deficits, tremors, or altered mental status. Extremities show no clubbing or cyanosis, and his overall demeanor reflects the endurance of a manual laborer adapting to debilitating symptoms.</p></div>",
+                            "status": "additional"
+                        },
+                        "entry": [
+                            {
+                                "reference": "urn:uuid:bcfeed5f-ea2a-4f97-b758-b5f4252cbde5"
+                            },
+                            {
+                                "reference": "urn:uuid:396bb44b-e670-4360-95d9-741bf1d2f2de"
+                            },
+                            {
+                                "reference": "urn:uuid:6f5875e3-d889-45be-a368-6e28737b0d87"
+                            },
+                            {
+                                "reference": "urn:uuid:10e529bf-aa5e-4374-87de-efdfb33b5598"
+                            },
+                            {
+                                "reference": "urn:uuid:c9a1f4ba-ba21-4c9e-b441-61ad85ea1373"
+                            },
+                            {
+                                "reference": "urn:uuid:ac425109-b6ad-429e-ba68-15c73fc13245"
+                            },
+                            {
+                                "reference": "urn:uuid:4b899906-5ad8-4cf7-be61-94faed9f21ec"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Laboratory and Diagnostic Findings",
+                        "text": {
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Laboratory and diagnostic findings upon admission revealed controlled hyperglycemia consistent with the patient&#39;s recent type 2 diabetes mellitus diagnosis, yet incompatible with the severity of his polyuria and polydipsia, prompting further investigation into alternative causes of this polyuric state. Complete blood count showed white blood cell count of 9,700/mm³, hemoglobin of 13.4 g/dL, and platelets of 376 × 10³/mm³, all within normal limits. Serum electrolytes included sodium 140 mEq/L, potassium 3.8 mEq/L, blood urea nitrogen 12 mg/dL, and creatinine 1.0 mg/dL, with serum osmolality at 295 mOsm/kg water. Glycemic markers indicated HbA1c of 7.2% and postprandial glucose around 180 mg/dL, with fasting blood sugar of 140 mg/dL, confirming adequate initial DM control. Urine analysis demonstrated pH 6.0, specific gravity 1.006, negative albumin and glucose, with 0-4 WBC/HPF and 0-2 RBC/HPF, and notably low urine osmolality of 140 mOsm/kg water, suggesting impaired concentrating ability unrelated to osmotic diuresis. Twenty-four-hour fluid balance recorded 9 L oral intake and 11.7 L urine output. Hormone assays were unremarkable: ACTH 25.2 pg/mL (reference 6.0-76.0 pg/mL), prolactin 8 µg/L (0-15 µg/L), cortisol 9.8 µg/dL (5-25 µg/dL), hGH 2.26 ng/mL (0.5-17 ng/mL), TSH 0.99 µU/mL (0.5-4.7 µU/mL), and normal angiotensin-converting enzyme activity (&lt;40 U/L). Magnetic resonance imaging (MRI) of the sella was normal, ruling out structural hypothalamic or pituitary pathology.</p>\n<p>On hospital day 5, a water deprivation test (Miller-Moses protocol) was performed due to persistent symptoms despite glycemic stability. During the test, the patient lost 3 kg (4.4% body weight), with urine osmolality remaining hypotonic below 130 mOsm/kg and no increment in basal ADH (5.18 pg/mL) to post-dehydration levels (3.95 pg/mL) despite serum osmolality rising from 285-295 to 300 mOsm/kg. Administration of one puff (5 µg) desmopressin nasal spray resulted in urine osmolality increasing to 266 mOsm/kg (&gt;100% from baseline 126 mOsm/kg) and urine output reducing from 200-410 mL/hr to 44-60 mL/hr, confirming antidiuretic hormone (ADH) deficiency with preserved renal response.</p></div>",
+                            "status": "additional"
+                        },
+                        "entry": [
+                            {
+                                "reference": "urn:uuid:0b7c1234-47aa-4135-b78c-d25282e8bbe3"
+                            },
+                            {
+                                "reference": "urn:uuid:05c266a8-9fc0-40d8-ab6d-560a7f41dfcb"
+                            },
+                            {
+                                "reference": "urn:uuid:c015cde6-f336-4cf8-9ac2-3352686f6a45"
+                            },
+                            {
+                                "reference": "urn:uuid:6cd1dcb0-c67c-4d49-8aea-4bf4feaebac1"
+                            },
+                            {
+                                "reference": "urn:uuid:5760a736-f597-4848-b844-ac5da6cffc77"
+                            },
+                            {
+                                "reference": "urn:uuid:6ffda892-a64a-47f4-94ad-6372c95ed800"
+                            },
+                            {
+                                "reference": "urn:uuid:e7ae623c-d82c-422c-9d76-972fb1ea5458"
+                            },
+                            {
+                                "reference": "urn:uuid:ee95a91b-f4e0-41f3-b808-a0a6e9988fd3"
+                            },
+                            {
+                                "reference": "urn:uuid:deccff00-b6bc-4e76-920b-0eeb0bfc0774"
+                            },
+                            {
+                                "reference": "urn:uuid:6272af9c-7847-4cca-aaec-57e610dd64b9"
+                            },
+                            {
+                                "reference": "urn:uuid:0f4e9d39-9494-407c-a820-d13a4567fd51"
+                            },
+                            {
+                                "reference": "urn:uuid:4e937e99-364d-444f-9550-a087130b316c"
+                            },
+                            {
+                                "reference": "urn:uuid:4bfcada0-bd5a-4667-b897-95fc231dc2c9"
+                            },
+                            {
+                                "reference": "urn:uuid:8dedd435-c802-4acb-a0b5-548546bfe774"
+                            },
+                            {
+                                "reference": "urn:uuid:75f1050b-f3e1-4a4c-8ad7-5be1726a1172"
+                            },
+                            {
+                                "reference": "urn:uuid:b87fab46-dc7b-475b-b3bf-129d5e5e9c6a"
+                            },
+                            {
+                                "reference": "urn:uuid:f2b51f28-a4c2-4975-9e3c-917155961be0"
+                            },
+                            {
+                                "reference": "urn:uuid:f61e4014-8c83-4fd6-bb32-1d791d258748"
+                            },
+                            {
+                                "reference": "urn:uuid:5c115353-2ca5-4dcf-a0fe-dcee0585abc4"
+                            },
+                            {
+                                "reference": "urn:uuid:ca10e194-f8c9-4139-afb0-e0570654387b"
+                            },
+                            {
+                                "reference": "urn:uuid:8fe0b399-5575-4037-8d8d-77247a3f1d25"
+                            },
+                            {
+                                "reference": "urn:uuid:7576157c-efc7-433e-88e7-60e1f23a562d"
+                            },
+                            {
+                                "reference": "urn:uuid:0420f93d-d004-404e-83b1-9d66a69cbaed"
+                            },
+                            {
+                                "reference": "urn:uuid:c68fc876-caa6-4e15-8de8-19a7fadde4dc"
+                            },
+                            {
+                                "reference": "urn:uuid:aef58820-5bc9-4b3a-a8f5-c8b4555b84cb"
+                            },
+                            {
+                                "reference": "urn:uuid:d9918b79-f343-4d16-9f97-1cffc2e62ea1"
+                            },
+                            {
+                                "reference": "urn:uuid:ea2dbae0-25bf-4172-b711-4b20d400851f"
+                            },
+                            {
+                                "reference": "urn:uuid:97e3d1e4-0831-452e-b798-51075ff949c2"
+                            },
+                            {
+                                "reference": "urn:uuid:022a0e77-348a-48cc-87e4-6a6505388228"
+                            },
+                            {
+                                "reference": "urn:uuid:ef19a479-4461-4d01-8802-402f87ceafdc"
+                            },
+                            {
+                                "reference": "urn:uuid:f3870f0b-bf6e-4ff3-8c38-24dbdff98fc7"
+                            },
+                            {
+                                "reference": "urn:uuid:00039ad7-9ce2-4228-9cfc-76cc7c735439"
+                            },
+                            {
+                                "reference": "urn:uuid:19b144f6-5b6f-49bc-963d-dbe56362224b"
+                            },
+                            {
+                                "reference": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                            },
+                            {
+                                "reference": "urn:uuid:1faf1ac1-60d3-49a3-b0a1-dd5900661a43"
+                            },
+                            {
+                                "reference": "urn:uuid:6a206bb0-beca-4ffe-af18-7d6f6c914d90"
+                            },
+                            {
+                                "reference": "urn:uuid:17dc85ee-a3ad-40fb-aeb9-b1fa3cd00639"
+                            },
+                            {
+                                "reference": "urn:uuid:9d717c4e-299a-413f-ada6-1fce95b9d29a"
+                            },
+                            {
+                                "reference": "urn:uuid:ec4c3ff2-0ceb-4ac0-aea3-ab7428e5dfbe"
+                            },
+                            {
+                                "reference": "urn:uuid:a38a975c-8d96-43f3-bcbf-6fae707e512b"
+                            },
+                            {
+                                "reference": "urn:uuid:4d367bfe-d617-48f9-98db-de6ef8ac271e"
+                            },
+                            {
+                                "reference": "urn:uuid:0cf8072e-699b-4e55-96a8-5116c83e3e54"
+                            },
+                            {
+                                "reference": "urn:uuid:d5f28bc8-af80-4360-8efe-1919e4e10502"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Assessment",
+                        "text": {
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This 56-year-old male gardener presents with a two-month history of severe polyuria, polydipsia, and nocturia, initially attributed to osmotic diuresis from newly diagnosed type 2 diabetes mellitus (DM), but ultimately confirmed as idiopathic central diabetes insipidus (CDI) through a meticulous diagnostic odyssey emphasizing the critical need to differentiate polyuric etiologies. The patient&#39;s resilience as an outdoor worker highlights his adaptive capacity, yet underscores risks such as mild dehydration and heat-related illness from unchecked fluid losses impacting sleep and productivity. Laboratory findings demonstrated controlled DM (HbA1c 7.2%) with low urine osmolality (140 mOsm/kg) and high output (11.7 L/day), incompatible with osmotic causes. The water deprivation test was pivotal, revealing absent ADH response to hyperosmolality but robust concentrating ability post-desmopressin (&gt;100% urine osmolality rise), diagnostic of CDI. Normal MRI and hormone panel support an idiopathic etiology, with no evidence of systemic or infiltrative disease. Comorbid type 2 DM requires ongoing management, but does not contribute to the primary polyuria. Overall, this case illustrates the value of endocrinologic evaluation in unexplained polyuria, integrating lifestyle considerations for this active patient.</p></div>",
+                            "status": "additional"
+                        }
+                    },
+                    {
+                        "title": "Plan",
+                        "text": {
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>The patient will be initiated on desmopressin nasal spray (Minirin®) at 10 µg/day, administered as one puff (5 µg) every 12 hours, to address the confirmed central diabetes insipidus (CDI), with monitoring for response in urine output and thirst, targeting reduction to &lt;3 L/day as achieved inpatient. For comorbid type 2 DM, continue metformin (Novamet GR® 500 mg twice daily) alongside American Diabetes Association-recommended diet, aiming for fasting blood sugar &lt;115 mg/dL; post-discharge glycemic follow-up in 1-2 weeks. Multidisciplinary management includes endocrinology outpatient visit in 4 weeks for desmopressin titration and annual pituitary MRI surveillance, alongside primary care for holistic care addressing work-related dehydration risks—counseling on hydration strategies during gardening and sleep hygiene to mitigate nocturia impacts. Educate on hyponatremia avoidance with desmopressin, with fluid intake ad libitum but not exceeding thirst. Discharge on hospital day 9 with resolved intense symptoms, markedly reduced urine output to 2-3 L/day, and improved quality of life, including better sleep and work tolerance.</p></div>",
+                            "status": "additional"
+                        },
+                        "entry": [
+                            {
+                                "reference": "urn:uuid:8b71b198-b96c-4d36-970a-092c80dd8f3d"
+                            },
+                            {
+                                "reference": "urn:uuid:dc9c237b-2992-4936-bc3e-6de0af0a726a"
+                            },
+                            {
+                                "reference": "urn:uuid:aa96c996-ee5d-4dc7-a968-27f57f37ec5c"
+                            },
+                            {
+                                "reference": "urn:uuid:3782fabd-75eb-4b61-acf1-6411b6a48243"
+                            },
+                            {
+                                "reference": "urn:uuid:53ee0953-cb81-4fbc-8b40-5cdf57f24ee6"
+                            }
+                        ]
+                    }
+                ],
+                "id": "617106dd-6421-4758-8010-5f7c03d18bd2",
+                "identifier": [
+                    {
+                        "value": "composition-473f98be",
+                        "system": "https://example.org/fhir/Composition"
+                    },
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:617106dd-6421-4758-8010-5f7c03d18bd2"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:dbdf4374-f23c-4c36-84ed-2f0bfa8e4c09",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "dbdf4374-f23c-4c36-84ed-2f0bfa8e4c09",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem list item"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "44054006",
+                            "display": "Diabetes mellitus type 2 (disorder)"
+                        }
+                    ],
+                    "text": "Type 2 diabetes mellitus diagnosis with fasting blood sugar 150 mg/dL"
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "recorder": {
+                    "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                },
+                "note": [
+                    {
+                        "text": "Diagnosed based on fasting blood sugar of 150 mg/dL"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:dbdf4374-f23c-4c36-84ed-2f0bfa8e4c09"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:d34449d4-18af-46da-9850-92d07fff9b2a",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "d34449d4-18af-46da-9850-92d07fff9b2a",
+                "status": "active",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "861007",
+                            "display": "metFORMIN HCl 500 MG Oral Tablet"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "effectiveDateTime": "2023-01-01",
+                "dosage": [
+                    {
+                        "text": "500 mg twice daily",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 500,
+                                    "unit": "mg",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "mg"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:d34449d4-18af-46da-9850-92d07fff9b2a"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ae8e91cf-1051-488f-b6c9-79bce4a7bd48",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ae8e91cf-1051-488f-b6c9-79bce4a7bd48",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8990-4",
+                            "display": "Fluid intake 24 hour"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueQuantity": {
+                    "comparator": ">",
+                    "value": 8,
+                    "unit": "L/24h",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "L/24h"
+                },
+                "note": [
+                    {
+                        "text": "Daily fluid intake >8 liters, part of history"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:ae8e91cf-1051-488f-b6c9-79bce4a7bd48"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:c3b3d064-a821-47c1-9901-1f3082b2515b",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "c3b3d064-a821-47c1-9901-1f3082b2515b",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "9192-6",
+                            "display": "Urine output 24 hour"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 11.7,
+                    "unit": "L",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "L"
+                },
+                "note": [
+                    {
+                        "text": "Daily urine output >10 liters with nocturia 4-5 times/night"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:c3b3d064-a821-47c1-9901-1f3082b2515b"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:7ca3584b-f50d-4204-9b0e-960c12162928",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "7ca3584b-f50d-4204-9b0e-960c12162928",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "816160009",
+                            "display": "Measured weight loss (observable entity)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 3,
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                },
+                "note": [
+                    {
+                        "text": "Weight decreased from 71 kg to 68 kg over two months"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:7ca3584b-f50d-4204-9b0e-960c12162928"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:bcfeed5f-ea2a-4f97-b758-b5f4252cbde5",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "bcfeed5f-ea2a-4f97-b758-b5f4252cbde5",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8302-2",
+                            "display": "Body height"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:00:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 176,
+                    "unit": "cm",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "cm"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:bcfeed5f-ea2a-4f97-b758-b5f4252cbde5"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:396bb44b-e670-4360-95d9-741bf1d2f2de",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "396bb44b-e670-4360-95d9-741bf1d2f2de",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29463-7",
+                            "display": "Body weight"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-01-01T10:00:00Z",
+                "valueQuantity": {
+                    "value": 68,
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:396bb44b-e670-4360-95d9-741bf1d2f2de"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:6f5875e3-d889-45be-a368-6e28737b0d87",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6f5875e3-d889-45be-a368-6e28737b0d87",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "39156-5",
+                            "display": "Body mass index (BMI) [Ratio]"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueQuantity": {
+                    "value": 22,
+                    "unit": "kg/m2",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg/m2"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:6f5875e3-d889-45be-a368-6e28737b0d87"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:10e529bf-aa5e-4374-87de-efdfb33b5598",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "10e529bf-aa5e-4374-87de-efdfb33b5598",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "85354-9",
+                            "display": "Blood pressure panel with all children optional"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:00:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 132,
+                            "unit": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 70,
+                            "unit": "mm[Hg]",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:10e529bf-aa5e-4374-87de-efdfb33b5598"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:c9a1f4ba-ba21-4c9e-b441-61ad85ea1373",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "c9a1f4ba-ba21-4c9e-b441-61ad85ea1373",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8867-4",
+                            "display": "Heart rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:00:00Z",
+                "valueQuantity": {
+                    "value": 80,
+                    "unit": "beats/min",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:c9a1f4ba-ba21-4c9e-b441-61ad85ea1373"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ac425109-b6ad-429e-ba68-15c73fc13245",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ac425109-b6ad-429e-ba68-15c73fc13245",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "9279-1",
+                            "display": "Respiratory rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:00:00Z",
+                "valueQuantity": {
+                    "value": 16,
+                    "unit": "breaths/minute",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:ac425109-b6ad-429e-ba68-15c73fc13245"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:4b899906-5ad8-4cf7-be61-94faed9f21ec",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "4b899906-5ad8-4cf7-be61-94faed9f21ec",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8310-5",
+                            "display": "Body temperature"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:00:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 36.8,
+                    "unit": "°C",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:4b899906-5ad8-4cf7-be61-94faed9f21ec"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0b7c1234-47aa-4135-b78c-d25282e8bbe3",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "0b7c1234-47aa-4135-b78c-d25282e8bbe3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "LAB",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "58410-2",
+                            "display": "CBC panel - Blood by Automated count"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15",
+                "issued": "2023-09-15T10:30:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "result": [
+                    {
+                        "reference": "urn:uuid:05c266a8-9fc0-40d8-ab6d-560a7f41dfcb",
+                        "display": "White blood cell count"
+                    },
+                    {
+                        "reference": "urn:uuid:c015cde6-f336-4cf8-9ac2-3352686f6a45",
+                        "display": "Hemoglobin"
+                    },
+                    {
+                        "reference": "urn:uuid:6cd1dcb0-c67c-4d49-8aea-4bf4feaebac1",
+                        "display": "Platelet count"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:0b7c1234-47aa-4135-b78c-d25282e8bbe3"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:05c266a8-9fc0-40d8-ab6d-560a7f41dfcb",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "05c266a8-9fc0-40d8-ab6d-560a7f41dfcb",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "6690-2",
+                            "display": "Leukocytes [#/volume] in Blood by Automated count"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:0b7c1234-47aa-4135-b78c-d25282e8bbe3"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 9700,
+                    "unit": "/mm3",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/mm3"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:05c266a8-9fc0-40d8-ab6d-560a7f41dfcb"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:c015cde6-f336-4cf8-9ac2-3352686f6a45",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "c015cde6-f336-4cf8-9ac2-3352686f6a45",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "718-7",
+                            "display": "Hemoglobin [Mass/volume] in Blood"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 13.4,
+                    "unit": "g/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "g/dL"
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:0b7c1234-47aa-4135-b78c-d25282e8bbe3"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:c015cde6-f336-4cf8-9ac2-3352686f6a45"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:6cd1dcb0-c67c-4d49-8aea-4bf4feaebac1",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6cd1dcb0-c67c-4d49-8aea-4bf4feaebac1",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "777-3",
+                            "display": "Platelets [#/volume] in Blood by Automated count"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2024-01-01T00:00:00Z",
+                "valueQuantity": {
+                    "value": 376,
+                    "unit": "10^3/uL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "10*3/uL"
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:0b7c1234-47aa-4135-b78c-d25282e8bbe3"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:6cd1dcb0-c67c-4d49-8aea-4bf4feaebac1"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:5760a736-f597-4848-b844-ac5da6cffc77",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "5760a736-f597-4848-b844-ac5da6cffc77",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "LAB",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "24321-2",
+                            "display": "Basic metabolic 2000 panel - Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15",
+                "issued": "2023-09-15T10:30:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "result": [
+                    {
+                        "reference": "urn:uuid:6ffda892-a64a-47f4-94ad-6372c95ed800"
+                    },
+                    {
+                        "reference": "urn:uuid:e7ae623c-d82c-422c-9d76-972fb1ea5458"
+                    },
+                    {
+                        "reference": "urn:uuid:ee95a91b-f4e0-41f3-b808-a0a6e9988fd3"
+                    },
+                    {
+                        "reference": "urn:uuid:deccff00-b6bc-4e76-920b-0eeb0bfc0774"
+                    },
+                    {
+                        "reference": "urn:uuid:6272af9c-7847-4cca-aaec-57e610dd64b9"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:5760a736-f597-4848-b844-ac5da6cffc77"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:6ffda892-a64a-47f4-94ad-6372c95ed800",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6ffda892-a64a-47f4-94ad-6372c95ed800",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2951-2",
+                            "display": "Sodium [Moles/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueQuantity": {
+                    "value": 140,
+                    "unit": "mEq/L",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "meq/L"
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:5760a736-f597-4848-b844-ac5da6cffc77"
+                    }
+                ],
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:6ffda892-a64a-47f4-94ad-6372c95ed800"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:e7ae623c-d82c-422c-9d76-972fb1ea5458",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "e7ae623c-d82c-422c-9d76-972fb1ea5458",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2823-3",
+                            "display": "Potassium [Moles/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-10-01T08:00:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 3.8,
+                    "unit": "mEq/L",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "meq/L"
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:5760a736-f597-4848-b844-ac5da6cffc77"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:e7ae623c-d82c-422c-9d76-972fb1ea5458"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ee95a91b-f4e0-41f3-b808-a0a6e9988fd3",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ee95a91b-f4e0-41f3-b808-a0a6e9988fd3",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3094-0",
+                            "display": "Urea nitrogen [Mass/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueQuantity": {
+                    "value": 12,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:5760a736-f597-4848-b844-ac5da6cffc77"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:ee95a91b-f4e0-41f3-b808-a0a6e9988fd3"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:deccff00-b6bc-4e76-920b-0eeb0bfc0774",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "deccff00-b6bc-4e76-920b-0eeb0bfc0774",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2160-0",
+                            "display": "Creatinine [Mass/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 1,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:5760a736-f597-4848-b844-ac5da6cffc77"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:deccff00-b6bc-4e76-920b-0eeb0bfc0774"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:6272af9c-7847-4cca-aaec-57e610dd64b9",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6272af9c-7847-4cca-aaec-57e610dd64b9",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2692-2",
+                            "display": "Osmolality of Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 295,
+                    "unit": "mOsm/kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mosmol/kg"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:6272af9c-7847-4cca-aaec-57e610dd64b9"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0f4e9d39-9494-407c-a820-d13a4567fd51",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "0f4e9d39-9494-407c-a820-d13a4567fd51",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "LAB",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "55399-0",
+                            "display": "Diabetes tracking panel"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15",
+                "issued": "2023-09-15T10:30:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "result": [
+                    {
+                        "reference": "urn:uuid:4e937e99-364d-444f-9550-a087130b316c",
+                        "display": "Hemoglobin A1c"
+                    },
+                    {
+                        "reference": "urn:uuid:4bfcada0-bd5a-4667-b897-95fc231dc2c9",
+                        "display": "Fasting blood sugar"
+                    },
+                    {
+                        "reference": "urn:uuid:8dedd435-c802-4acb-a0b5-548546bfe774",
+                        "display": "Postprandial glucose"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:0f4e9d39-9494-407c-a820-d13a4567fd51"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:4e937e99-364d-444f-9550-a087130b316c",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "4e937e99-364d-444f-9550-a087130b316c",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "4548-4",
+                            "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 7.2,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:4e937e99-364d-444f-9550-a087130b316c"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:4bfcada0-bd5a-4667-b897-95fc231dc2c9",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "4bfcada0-bd5a-4667-b897-95fc231dc2c9",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "1558-6",
+                            "display": "Fasting glucose [Mass/volume] in Serum or Plasma"
+                        }
+                    ],
+                    "text": "Fasting blood glucose"
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T08:00:00Z",
+                "valueQuantity": {
+                    "value": 140,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:0f4e9d39-9494-407c-a820-d13a4567fd51"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:4bfcada0-bd5a-4667-b897-95fc231dc2c9"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:8dedd435-c802-4acb-a0b5-548546bfe774",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "8dedd435-c802-4acb-a0b5-548546bfe774",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "87422-2",
+                            "display": "Glucose [Mass/volume] in Blood --post meal"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueQuantity": {
+                    "value": 180,
+                    "unit": "mg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/dL"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:8dedd435-c802-4acb-a0b5-548546bfe774"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:75f1050b-f3e1-4a4c-8ad7-5be1726a1172",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "75f1050b-f3e1-4a4c-8ad7-5be1726a1172",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "LAB",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "24356-8",
+                            "display": "Urinalysis complete panel - Urine"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15",
+                "issued": "2023-09-15T10:30:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "result": [
+                    {
+                        "reference": "urn:uuid:b87fab46-dc7b-475b-b3bf-129d5e5e9c6a",
+                        "display": "Urine pH"
+                    },
+                    {
+                        "reference": "urn:uuid:f2b51f28-a4c2-4975-9e3c-917155961be0",
+                        "display": "Urine specific gravity"
+                    },
+                    {
+                        "reference": "urn:uuid:f61e4014-8c83-4fd6-bb32-1d791d258748",
+                        "display": "Urine albumin"
+                    },
+                    {
+                        "reference": "urn:uuid:5c115353-2ca5-4dcf-a0fe-dcee0585abc4",
+                        "display": "Urine glucose"
+                    },
+                    {
+                        "reference": "urn:uuid:ca10e194-f8c9-4139-afb0-e0570654387b",
+                        "display": "Urine WBC"
+                    },
+                    {
+                        "reference": "urn:uuid:8fe0b399-5575-4037-8d8d-77247a3f1d25",
+                        "display": "Urine RBC"
+                    },
+                    {
+                        "reference": "urn:uuid:7576157c-efc7-433e-88e7-60e1f23a562d",
+                        "display": "Urine osmolality"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:75f1050b-f3e1-4a4c-8ad7-5be1726a1172"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:b87fab46-dc7b-475b-b3bf-129d5e5e9c6a",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "b87fab46-dc7b-475b-b3bf-129d5e5e9c6a",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2756-5",
+                            "display": "pH of Urine"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:75f1050b-f3e1-4a4c-8ad7-5be1726a1172"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 6,
+                    "unit": "pH",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{pH}"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:b87fab46-dc7b-475b-b3bf-129d5e5e9c6a"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f2b51f28-a4c2-4975-9e3c-917155961be0",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "f2b51f28-a4c2-4975-9e3c-917155961be0",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2965-2",
+                            "display": "Specific gravity of Urine"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:75f1050b-f3e1-4a4c-8ad7-5be1726a1172"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 1.006,
+                    "system": "http://unitsofmeasure.org",
+                    "code": "1"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:f2b51f28-a4c2-4975-9e3c-917155961be0"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f61e4014-8c83-4fd6-bb32-1d791d258748",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "f61e4014-8c83-4fd6-bb32-1d791d258748",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "50949-7",
+                            "display": "Albumin [Presence] in Urine by Test strip"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "167583002",
+                            "display": "Urine microalbumin not detected (finding)"
+                        }
+                    ]
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:75f1050b-f3e1-4a4c-8ad7-5be1726a1172"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:f61e4014-8c83-4fd6-bb32-1d791d258748"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:5c115353-2ca5-4dcf-a0fe-dcee0585abc4",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "5c115353-2ca5-4dcf-a0fe-dcee0585abc4",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "25428-4",
+                            "display": "Glucose [Presence] in Urine by Test strip"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:75f1050b-f3e1-4a4c-8ad7-5be1726a1172"
+                    }
+                ],
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "167261002",
+                            "display": "Urine glucose not detected (finding)"
+                        }
+                    ]
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:5c115353-2ca5-4dcf-a0fe-dcee0585abc4"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ca10e194-f8c9-4139-afb0-e0570654387b",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ca10e194-f8c9-4139-afb0-e0570654387b",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5821-4",
+                            "display": "Leukocytes [#/area] in Urine sediment by Microscopy high power field"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueString": "0-4/HPF",
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:ca10e194-f8c9-4139-afb0-e0570654387b"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:8fe0b399-5575-4037-8d8d-77247a3f1d25",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "8fe0b399-5575-4037-8d8d-77247a3f1d25",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5808-1",
+                            "display": "Erythrocytes [#/volume] in Urine sediment by Microscopy high power field"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:75f1050b-f3e1-4a4c-8ad7-5be1726a1172"
+                    }
+                ],
+                "valueString": "0-2/HPF",
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:8fe0b399-5575-4037-8d8d-77247a3f1d25"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:7576157c-efc7-433e-88e7-60e1f23a562d",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "7576157c-efc7-433e-88e7-60e1f23a562d",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2695-5",
+                            "display": "Osmolality of Urine"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueQuantity": {
+                    "value": 140,
+                    "unit": "mOsm/kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "osmol/kg"
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "L",
+                                "display": "Low"
+                            }
+                        ]
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:75f1050b-f3e1-4a4c-8ad7-5be1726a1172"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:7576157c-efc7-433e-88e7-60e1f23a562d"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0420f93d-d004-404e-83b1-9d66a69cbaed",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "0420f93d-d004-404e-83b1-9d66a69cbaed",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "8990-4",
+                            "display": "Fluid intake 24 hour"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 9,
+                    "unit": "L",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "L"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:0420f93d-d004-404e-83b1-9d66a69cbaed"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:c68fc876-caa6-4e15-8de8-19a7fadde4dc",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "c68fc876-caa6-4e15-8de8-19a7fadde4dc",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3167-4",
+                            "display": "Volume of 24 hour Urine"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 11.7,
+                    "unit": "L",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "L"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:c68fc876-caa6-4e15-8de8-19a7fadde4dc"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:aef58820-5bc9-4b3a-a8f5-c8b4555b84cb",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "aef58820-5bc9-4b3a-a8f5-c8b4555b84cb",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "LAB",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LP31660-1",
+                            "display": "Pituitary Hormones-"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15",
+                "issued": "2023-09-15T10:30:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "result": [
+                    {
+                        "reference": "urn:uuid:d9918b79-f343-4d16-9f97-1cffc2e62ea1",
+                        "display": "ACTH"
+                    },
+                    {
+                        "reference": "urn:uuid:ea2dbae0-25bf-4172-b711-4b20d400851f",
+                        "display": "Prolactin"
+                    },
+                    {
+                        "reference": "urn:uuid:97e3d1e4-0831-452e-b798-51075ff949c2",
+                        "display": "Cortisol"
+                    },
+                    {
+                        "reference": "urn:uuid:022a0e77-348a-48cc-87e4-6a6505388228",
+                        "display": "hGH"
+                    },
+                    {
+                        "reference": "urn:uuid:ef19a479-4461-4d01-8802-402f87ceafdc",
+                        "display": "TSH"
+                    },
+                    {
+                        "reference": "urn:uuid:f3870f0b-bf6e-4ff3-8c38-24dbdff98fc7",
+                        "display": "ACE"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:aef58820-5bc9-4b3a-a8f5-c8b4555b84cb"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:d9918b79-f343-4d16-9f97-1cffc2e62ea1",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "d9918b79-f343-4d16-9f97-1cffc2e62ea1",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2141-0",
+                            "display": "Corticotropin [Mass/volume] in Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueQuantity": {
+                    "value": 25.2,
+                    "unit": "pg/mL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "pg/mL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 6,
+                            "unit": "pg/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "pg/mL"
+                        },
+                        "high": {
+                            "value": 76,
+                            "unit": "pg/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "pg/mL"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:d9918b79-f343-4d16-9f97-1cffc2e62ea1"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ea2dbae0-25bf-4172-b711-4b20d400851f",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ea2dbae0-25bf-4172-b711-4b20d400851f",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2842-3",
+                            "display": "Prolactin [Mass/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueQuantity": {
+                    "value": 8,
+                    "unit": "µg/L",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "ug/L"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 0,
+                            "unit": "µg/L",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "ug/L"
+                        },
+                        "high": {
+                            "value": 15,
+                            "unit": "µg/L",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "ug/L"
+                        }
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:aef58820-5bc9-4b3a-a8f5-c8b4555b84cb"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:ea2dbae0-25bf-4172-b711-4b20d400851f"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:97e3d1e4-0831-452e-b798-51075ff949c2",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "97e3d1e4-0831-452e-b798-51075ff949c2",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2143-6",
+                            "display": "Cortisol [Mass/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:aef58820-5bc9-4b3a-a8f5-c8b4555b84cb"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "valueQuantity": {
+                    "value": 9.8,
+                    "unit": "µg/dL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "ug/dL"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:97e3d1e4-0831-452e-b798-51075ff949c2"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:022a0e77-348a-48cc-87e4-6a6505388228",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "022a0e77-348a-48cc-87e4-6a6505388228",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2963-7",
+                            "display": "Somatotropin [Mass/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 2.26,
+                    "unit": "ng/mL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "ng/mL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 0.5,
+                            "unit": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "ng/mL"
+                        },
+                        "high": {
+                            "value": 17,
+                            "unit": "ng/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "ng/mL"
+                        }
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:aef58820-5bc9-4b3a-a8f5-c8b4555b84cb"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:022a0e77-348a-48cc-87e4-6a6505388228"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ef19a479-4461-4d01-8802-402f87ceafdc",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ef19a479-4461-4d01-8802-402f87ceafdc",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3016-3",
+                            "display": "Thyrotropin [Units/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-15T10:20:00Z",
+                "issued": "2023-09-15T10:20:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 0.99,
+                    "unit": "µU/mL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "µU/mL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 0.5,
+                            "unit": "µU/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "µU/mL"
+                        },
+                        "high": {
+                            "value": 4.7,
+                            "unit": "µU/mL",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "µU/mL"
+                        }
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:aef58820-5bc9-4b3a-a8f5-c8b4555b84cb"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:ef19a479-4461-4d01-8802-402f87ceafdc"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f3870f0b-bf6e-4ff3-8c38-24dbdff98fc7",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "f3870f0b-bf6e-4ff3-8c38-24dbdff98fc7",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2742-5",
+                            "display": "Angiotensin converting enzyme [Enzymatic activity/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:aef58820-5bc9-4b3a-a8f5-c8b4555b84cb"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 40,
+                    "comparator": "<",
+                    "unit": "U/L",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "U/L"
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:f3870f0b-bf6e-4ff3-8c38-24dbdff98fc7"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:00039ad7-9ce2-4228-9cfc-76cc7c735439",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "00039ad7-9ce2-4228-9cfc-76cc7c735439",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "RAD",
+                                "display": "Radiology"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "24880-7",
+                            "display": "MR Pituitary and Sella turcica",
+                            "version": "2.68"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-10-01",
+                "issued": "2023-10-01T12:00:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "conclusion": "MRI of sella: normal, no structural pathology",
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:00039ad7-9ce2-4228-9cfc-76cc7c735439"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:19b144f6-5b6f-49bc-963d-dbe56362224b",
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "19b144f6-5b6f-49bc-963d-dbe56362224b",
+                "status": "completed",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "252272001",
+                            "display": "Water deprivation test (procedure)"
+                        }
+                    ],
+                    "text": "Water deprivation test (Miller-Moses protocol)"
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performedDateTime": "2023-09-05",
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:19b144f6-5b6f-49bc-963d-dbe56362224b"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "af659fb3-aa7d-496a-9d19-1a6ce7af8b2b",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "LAB",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11502-2",
+                            "display": "Laboratory report"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-20",
+                "issued": "2023-09-20T10:30:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "result": [
+                    {
+                        "reference": "urn:uuid:1faf1ac1-60d3-49a3-b0a1-dd5900661a43",
+                        "display": "Weight loss 3 kg or 4.4%"
+                    },
+                    {
+                        "reference": "urn:uuid:6a206bb0-beca-4ffe-af18-7d6f6c914d90",
+                        "display": "Baseline urine osmolality <130 mOsm/kg"
+                    },
+                    {
+                        "reference": "urn:uuid:17dc85ee-a3ad-40fb-aeb9-b1fa3cd00639",
+                        "display": "Basal ADH 5.18 pg/mL"
+                    },
+                    {
+                        "reference": "urn:uuid:9d717c4e-299a-413f-ada6-1fce95b9d29a",
+                        "display": "Post-dehydration ADH 3.95 pg/mL"
+                    },
+                    {
+                        "reference": "urn:uuid:ec4c3ff2-0ceb-4ac0-aea3-ab7428e5dfbe",
+                        "display": "Serum osmolality rise 285-295 to 300 mOsm/kg"
+                    },
+                    {
+                        "reference": "urn:uuid:a38a975c-8d96-43f3-bcbf-6fae707e512b",
+                        "display": "Post-desmopressin urine osmolality 266 mOsm/kg"
+                    },
+                    {
+                        "reference": "urn:uuid:4d367bfe-d617-48f9-98db-de6ef8ac271e",
+                        "display": "Urine output 200-410 mL/hr before"
+                    },
+                    {
+                        "reference": "urn:uuid:0cf8072e-699b-4e55-96a8-5116c83e3e54",
+                        "display": "Urine output 44-60 mL/hr after"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:1faf1ac1-60d3-49a3-b0a1-dd5900661a43",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "1faf1ac1-60d3-49a3-b0a1-dd5900661a43",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs",
+                                "display": "Vital Signs"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LP75881-0",
+                            "display": "Weight change"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-20T08:00:00Z",
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": -3,
+                    "unit": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "kg"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LP149203-4",
+                                    "display": "Percent of body weight"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 4.4,
+                            "unit": "%",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "%"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:1faf1ac1-60d3-49a3-b0a1-dd5900661a43"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:6a206bb0-beca-4ffe-af18-7d6f6c914d90",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6a206bb0-beca-4ffe-af18-7d6f6c914d90",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2695-5",
+                            "display": "Osmolality of Urine"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-10-05T08:00:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 126,
+                    "unit": "mOsm/kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mosmol/kg"
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "L",
+                                "display": "Low"
+                            }
+                        ]
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:6a206bb0-beca-4ffe-af18-7d6f6c914d90"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:17dc85ee-a3ad-40fb-aeb9-b1fa3cd00639",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "17dc85ee-a3ad-40fb-aeb9-b1fa3cd00639",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3126-0",
+                            "display": "Vasopressin [Mass/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-20T08:00:00Z",
+                "valueQuantity": {
+                    "value": 5.18,
+                    "unit": "pg/mL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "pg/mL"
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                    }
+                ],
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:17dc85ee-a3ad-40fb-aeb9-b1fa3cd00639"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:9d717c4e-299a-413f-ada6-1fce95b9d29a",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "9d717c4e-299a-413f-ada6-1fce95b9d29a",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3126-0",
+                            "display": "Vasopressin [Mass/volume] in Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "effectiveDateTime": "2023-10-05T14:00:00Z",
+                "valueQuantity": {
+                    "value": 3.95,
+                    "unit": "pg/mL",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "pg/mL"
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:9d717c4e-299a-413f-ada6-1fce95b9d29a"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:ec4c3ff2-0ceb-4ac0-aea3-ab7428e5dfbe",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ec4c3ff2-0ceb-4ac0-aea3-ab7428e5dfbe",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2692-2",
+                            "display": "Osmolality of Serum or Plasma"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-20T10:00:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 300,
+                    "unit": "mOsm/kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "osm"
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "H",
+                                "display": "High"
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Rise from baseline 285-295 mOsm/kg during water deprivation test"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:ec4c3ff2-0ceb-4ac0-aea3-ab7428e5dfbe"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:a38a975c-8d96-43f3-bcbf-6fae707e512b",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "a38a975c-8d96-43f3-bcbf-6fae707e512b",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2695-5",
+                            "display": "Osmolality of Urine",
+                            "version": "2.77"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-10-05T14:00:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 266,
+                    "unit": "mOsm/kg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mosmol/kg"
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "text": ">100% increase from baseline 126 mOsm/kg"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:a38a975c-8d96-43f3-bcbf-6fae707e512b"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:4d367bfe-d617-48f9-98db-de6ef8ac271e",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "4d367bfe-d617-48f9-98db-de6ef8ac271e",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "9188-4",
+                            "display": "Urine output 1 hour"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2023-09-20T08:00:00Z",
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "valueRange": {
+                    "low": {
+                        "value": 200,
+                        "unit": "mL/h",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL/h"
+                    },
+                    "high": {
+                        "value": 410,
+                        "unit": "mL/h",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL/h"
+                    }
+                },
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:4d367bfe-d617-48f9-98db-de6ef8ac271e"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:0cf8072e-699b-4e55-96a8-5116c83e3e54",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "0cf8072e-699b-4e55-96a8-5116c83e3e54",
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory",
+                                "display": "Laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "9187-6",
+                            "display": "Urine output"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "performer": [
+                    {
+                        "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ],
+                "partOf": [
+                    {
+                        "reference": "urn:uuid:af659fb3-aa7d-496a-9d19-1a6ce7af8b2b"
+                    }
+                ],
+                "effectiveDateTime": "2023-09-20T14:00:00Z",
+                "valueRange": {
+                    "low": {
+                        "value": 44,
+                        "unit": "mL/hr",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL/h"
+                    },
+                    "high": {
+                        "value": 60,
+                        "unit": "mL/hr",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mL/h"
+                    }
+                },
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:0cf8072e-699b-4e55-96a8-5116c83e3e54"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:d5f28bc8-af80-4360-8efe-1919e4e10502",
+            "resource": {
+                "resourceType": "MedicationAdministration",
+                "id": "d5f28bc8-af80-4360-8efe-1919e4e10502",
+                "status": "completed",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "849506",
+                            "display": "desmopressin acetate 0.01 % Nasal Spray"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                        }
+                    }
+                ],
+                "dosage": {
+                    "text": "one puff (5 µg)",
+                    "route": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "46713006",
+                                "display": "Nasal route (qualifier value)"
+                            }
+                        ]
+                    },
+                    "dose": {
+                        "value": 5,
+                        "unit": "µg",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "ug"
+                    },
+                    "method": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "738996007",
+                                "display": "Spray (administration method)"
+                            }
+                        ]
+                    }
+                },
+                "context": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "effectiveDateTime": "2024-01-01T00:00:00Z",
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:d5f28bc8-af80-4360-8efe-1919e4e10502"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:8b71b198-b96c-4d36-970a-092c80dd8f3d",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "8b71b198-b96c-4d36-970a-092c80dd8f3d",
+                "status": "active",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "849505",
+                            "display": "desmopressin acetate 0.01 MG/ACTUAT"
+                        }
+                    ],
+                    "text": "Desmopressin nasal spray (Minirin®)"
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "requester": {
+                    "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                },
+                "dosageInstruction": [
+                    {
+                        "sequence": 1,
+                        "text": "one puff (5 µg) every 12 hours",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "46713006",
+                                    "display": "Nasal route (qualifier value)"
+                                }
+                            ]
+                        },
+                        "doseAndRate": [
+                            {
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                                            "code": "ordered",
+                                            "display": "Ordered"
+                                        }
+                                    ],
+                                    "text": "Ordered"
+                                },
+                                "doseQuantity": {
+                                    "value": 5,
+                                    "unit": "µg",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "ug"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "for central diabetes insipidus"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:8b71b198-b96c-4d36-970a-092c80dd8f3d"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:dc9c237b-2992-4936-bc3e-6de0af0a726a",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "dc9c237b-2992-4936-bc3e-6de0af0a726a",
+                "status": "active",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "861007",
+                            "display": "metFORMIN HCl 500 MG Oral Tablet"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "requester": {
+                    "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "500 mg twice daily",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 2,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral route (qualifier value)"
+                                }
+                            ]
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 500,
+                                    "unit": "mg",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "mg"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:dc9c237b-2992-4936-bc3e-6de0af0a726a"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:aa96c996-ee5d-4dc7-a968-27f57f37ec5c",
+            "resource": {
+                "resourceType": "ServiceRequest",
+                "id": "aa96c996-ee5d-4dc7-a968-27f57f37ec5c",
+                "status": "active",
+                "intent": "plan",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "310045007",
+                            "display": "Endocrinology service (procedure)"
+                        }
+                    ],
+                    "text": "Endocrinology outpatient visit for desmopressin titration and monitoring"
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "requester": {
+                    "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "154699008",
+                                "display": "Central diabetes insipidus (disorder)"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:aa96c996-ee5d-4dc7-a968-27f57f37ec5c"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:3782fabd-75eb-4b61-acf1-6411b6a48243",
+            "resource": {
+                "resourceType": "ServiceRequest",
+                "id": "3782fabd-75eb-4b61-acf1-6411b6a48243",
+                "status": "active",
+                "intent": "plan",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "241605004",
+                            "display": "Magnetic resonance imaging of pituitary fossa (procedure)"
+                        }
+                    ],
+                    "text": "Annual pituitary MRI surveillance"
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "requester": {
+                    "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "15771004",
+                                "display": "Diabetes insipidus (disorder)"
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:3782fabd-75eb-4b61-acf1-6411b6a48243"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:53ee0953-cb81-4fbc-8b40-5cdf57f24ee6",
+            "resource": {
+                "resourceType": "ServiceRequest",
+                "id": "53ee0953-cb81-4fbc-8b40-5cdf57f24ee6",
+                "status": "active",
+                "intent": "order",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "185389009",
+                            "display": "Follow-up visit (procedure)"
+                        }
+                    ],
+                    "text": "Primary care follow-up for holistic care and dehydration risk management"
+                },
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "encounter": {
+                    "reference": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                },
+                "requester": {
+                    "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "704420006",
+                                "display": "At increased risk of dehydration (finding)"
+                            }
+                        ]
+                    }
+                ],
+                "priority": "routine",
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:53ee0953-cb81-4fbc-8b40-5cdf57f24ee6"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "8dfdfe24-358d-4fd0-a0a0-5f6eafa56053",
+                "active": true,
+                "name": [
+                    {
+                        "family": "Smith",
+                        "given": [
+                            "John"
+                        ]
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1968-01-01",
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a",
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "4db5e24b-7d98-46ff-86ad-d660be39951a",
+                "status": "finished",
+                "class": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "IMP",
+                    "display": "inpatient encounter"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "389943000",
+                                "display": "Admission to hospital (procedure)"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "urn:uuid:8dfdfe24-358d-4fd0-a0a0-5f6eafa56053"
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "28442001",
+                                "display": "Polyuria (finding)"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "161847005",
+                                "display": "(Excessive thirst) or (polydipsia) (finding)"
+                            }
+                        ]
+                    }
+                ],
+                "period": {
+                    "start": "2023-01-01",
+                    "end": "2023-01-09"
+                },
+                "length": {
+                    "value": 9,
+                    "unit": "d",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "participant": [
+                    {
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                                        "code": "ATND",
+                                        "display": "attender"
+                                    }
+                                ]
+                            }
+                        ],
+                        "individual": {
+                            "reference": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:4db5e24b-7d98-46ff-86ad-d660be39951a"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "3e243247-410a-4ac0-a692-4e9560e28cd9",
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Endocrinologist",
+                        "given": [
+                            "John"
+                        ],
+                        "prefix": [
+                            "Dr."
+                        ]
+                    },
+                    {
+                        "use": "usual",
+                        "family": "Endocrinologist",
+                        "given": [
+                            "John"
+                        ],
+                        "suffix": [
+                            "MD"
+                        ]
+                    }
+                ],
+                "qualification": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "61894003",
+                                    "display": "Endocrinologist (occupation)"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:3e243247-410a-4ac0-a692-4e9560e28cd9"
+                    }
+                ]
+            }
+        }
+    ]
+}
