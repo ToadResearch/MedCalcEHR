@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "datasets",
-    "sglang>=0.4.6.post1",
+    "sglang[all]>=0.4.6.post1",
     "huggingface_hub[cli]",
     "flashinfer-python"
 ]
