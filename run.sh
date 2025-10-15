@@ -23,6 +23,7 @@ bun run headless --single \
   --llm-max-concurrency 3 \
   --val-max-iters 30 \
   --fhir-concurrency 3 \
+  --no-api-key 
 
 bun run headless --batch \
   --file example-batch/sample.jsonl \
@@ -35,3 +36,4 @@ bun run headless --batch \
   --llm-max-concurrency 3 \
   --val-max-iters 30 \
   --fhir-concurrency 3 \
+  --no-api-key
