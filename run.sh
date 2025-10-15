@@ -15,25 +15,15 @@ model="baichuan-m2-32b-gptq-int4"
 
 cd kiln-headless
 
-bun run headless --single \
-  --text "Mr. Grok Four is 42 years old and has a stomach bug" \
-  --type note_and_fhir \
-  --llm-url $base_url \
-  --model $model \
-  --llm-max-concurrency 3 \
-  --val-max-iters 30 \
-  --fhir-concurrency 3 \
-  --no-api-key 
-
 bun run headless --batch \
-  --file example-batch/sample.jsonl \
-  --column "context" \
+  --file ../data/medcalc_sample.jsonl \
+  --column "Patient Note" \
   --type note \
   --result-dir output \
   --result-file sample_out.jsonl \
   --llm-url $base_url \
   --model $model \
-  --llm-max-concurrency 3 \
+  --llm-max-concurrency 16 \
   --val-max-iters 30 \
-  --fhir-concurrency 3 \
+  --fhir-concurrency 5 \
   --no-api-key
