@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Ensure tools are in PATH
+export PATH="$HOME/.local/bin:$HOME/.bun/bin:$PATH"
+
 # Activate project venv
 if [ -f ".venv/bin/activate" ]; then
   # shellcheck disable=SC1091

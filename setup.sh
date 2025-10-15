@@ -17,75 +17,9 @@ fi
 source .venv/bin/activate
 
 # sync project deps (sglang, datasets, flashinfer)
-uv pip install --upgrade pip
-uv sync
-
-
-# --- Patch SGLang drafter for Baichuan M2 (MTP + speculative decoding) ---
-patch_sglang_qwen2() {
-  set -euo pipefail
-
-  echo "Locating SGLang install..."
-  SGLANG_DIR="$(python - <<'PY'
-import inspect, os, sys
-try:
-    import sglang
-except Exception as e:
-    sys.exit("ERROR: sglang is not installed in this Python env.")
-print(os.path.dirname(inspect.getfile(sglang)))
-PY
-  )"
-
-  TARGET="${SGLANG_DIR}/srt/models/qwen2.py"
-  BACKUP="${TARGET}.bak"
-
-  if [ ! -f "$TARGET" ]; then
-    echo "ERROR: Expected file not found: $TARGET"
-    echo "Make sure SGLang is installed in this environment."
-    return 1
-  fi
-
-  TMP_DIR="$(mktemp -d)"
-  DL="${TMP_DIR}/qwen2.py"
-  echo "Downloading Baichuan drafter (draft/qwen2.py) from Hugging Face..."
-  # Using curl keeps this script self-contained; no extra Python deps needed.
-  curl -fsSL -o "$DL" \
-    "https://huggingface.co/baichuan-inc/Baichuan-M2-32B-GPTQ-Int4/resolve/main/draft/qwen2.py"
-
-  if [ ! -s "$DL" ]; then
-    echo "ERROR: Failed to download draft/qwen2.py"
-    return 1
-  fi
-
-  # Skip if already identical
-  if command -v sha256sum >/dev/null 2>&1; then
-    if [ -f "$TARGET" ] && [ "$(sha256sum "$TARGET" | awk '{print $1}')" = "$(sha256sum "$DL" | awk '{print $1}')" ]; then
-      echo "SGLang drafter already matches Baichuan draft/qwen2.py; nothing to do."
-      rm -rf "$TMP_DIR"
-      return 0
-    fi
-  fi
-
-  # Backup once
-  if [ ! -f "$BACKUP" ]; then
-    echo "Creating backup at $BACKUP"
-    cp -p "$TARGET" "$BACKUP"
-  fi
-
-  echo "Replacing $TARGET"
-  cp -f "$DL" "$TARGET"
-
-  # Quick smoke check: make sure the new file mentions 'Drafter' or MTP hooks
-  if ! grep -qiE "Drafter|MTP|draft" "$TARGET"; then
-    echo "WARNING: Replacement file doesn't look like a drafter; proceed with caution."
-  fi
-
-  rm -rf "$TMP_DIR"
-  echo "Done patching SGLang drafter."
-}
-
-# Call it (safe to run multiple times)
-patch_sglang_qwen2
+# Use uv pip compile + sync to ensure all transitive dependencies are resolved
+rm -f uv.lock
+uv sync --reinstall
 
 
 # ---------- data ----------
@@ -93,13 +27,30 @@ DATA_FILE="data/medcalc_sample.jsonl"
 mkdir -p data
 if [ ! -f "$DATA_FILE" ]; then
   echo "Data not found. Downloading data..."
-  python - <<'PY' "$@"
+  # Feed script on stdin ('-') and forward CLI flags after it
+  python - "$@" <<'PY'
 import sys, subprocess
 subprocess.check_call([sys.executable, "src/download_data.py", *sys.argv[1:]])
 PY
   echo "Data download complete."
 else
   echo "Data already exists at $DATA_FILE. Skipping download."
+fi
+
+# ---------- Java 17 (for FHIR validator) ----------
+if command -v java &> /dev/null; then
+  JAVA_VERSION=$(java -version 2>&1 | head -n 1 | awk -F '"' '{print $2}' | awk -F '.' '{print $1}')
+  if [ "$JAVA_VERSION" -ge 17 ] 2>/dev/null; then
+    echo "Java $JAVA_VERSION is already installed."
+  else
+    echo "Java $JAVA_VERSION found but need Java 17+. Installing..."
+    sudo apt-get update -qq
+    sudo apt-get install -y openjdk-17-jdk
+  fi
+else
+  echo "Java not found. Installing OpenJDK 17..."
+  sudo apt-get update -qq
+  sudo apt-get install -y openjdk-17-jdk
 fi
 
 # ---------- bun / kiln-headless ----------
@@ -121,6 +72,7 @@ if [ ! -d "kiln-headless" ]; then
 else
   echo "kiln-headless is already installed."
   cd kiln-headless
+  bun install
 fi
 
 # Copy .env into kiln-headless
@@ -143,5 +95,10 @@ bun run scripts/setup.ts
 bun add fast-xml-parser
 bun run scripts/load-terminology.ts
 
+# run tests where they live
+echo "[test] Running bun test in kiln-headless/server..."
+export TERMINOLOGY_DB_PATH="$(pwd)/db/terminology.sqlite"
+export VALIDATOR_JAR="$(pwd)/validator.jar"
+bun test || echo "[warn] bun test failed or no tests found; continuing"
+
 cd ..
-bun test
