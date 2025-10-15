@@ -28,20 +28,14 @@ Now we setup the LLM server (these are the default args, and are not necessary t
 chmod +x start_server.sh
 ./start_server.sh \
   --model-path baichuan-inc/Baichuan-M2-32B-GPTQ-Int4 \
-  --port 30000 \
-  --tp 4 \
-  --dp 2 \
+  --served-model-name baichuan-m2-32b-gptq-int4 \
+  --host 0.0.0.0 --port 30000 \
+  --tp 4 --dp 2 \
   --dtype bfloat16 \
   --reasoning-parser qwen3 \
   --mem-fraction 0.9 \
   --cuda-graph-max-bs 2 \
-  --kv-cache-dtype fp8_e4m3 \
-  --attention-backend flashinfer \
-  --speculative-algorithm EAGLE3 \
-  --speculative-draft-model-path baichuan-inc/Baichuan-M2-32B-GPTQ-Int4/draft \
-  --speculative-num-steps 6 \
-  --speculative-eagle-topk 10 \
-  --speculative-num-draft-tokens 32
+  --attention-backend flashinfer
 ```
 
 Next we can run the process

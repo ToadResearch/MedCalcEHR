@@ -18,8 +18,8 @@ cd kiln-headless
 bun run headless --batch \
   --file ../data/medcalc_sample.jsonl \
   --column "Patient Note" \
-  --type note \
-  --result-dir output \
+  --type fhir \
+  --result-dir ../output \
   --result-file sample_out.jsonl \
   --llm-url $base_url \
   --model $model \
